@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,32 @@
     <title>Ejemplo Cesar</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.
-    P.D. tengo sueñito
-
-    Tarea:
-
-    Voy a querer que no sea constante el desplazamiento y que lo pueda ingresar
-    adentro de un campo de texto, deberan de aplicar la operacion modulo
-    si me paso de 27 letras
-
-    desp  mod 27 
-
-    porque van a agregar la ñ
-    <br>
-    <textarea id="cadena" cols="30" rows="10"></textarea>
-    <br>
-    <p><input type="button" value="Cifrar" onclick="cifrar()" >
-        <input type="button" value="Descifrar" onclick="descifrar()" ></p>
-    <div id="resultado" >
-
+    <div class="main grid">
+        <div class="main_text header">Este es un ejemplo para poder cifrar un texto con el algoritmo de césar. P.D. tengo sueñito Tarea: Voy a querer que no sea constante el desplazamiento y que lo pueda ingresar adentro de un campo de texto, deberan de aplicar la operacion modulo
+            si me paso de 27 letras desp mod 27 porque van a agregar la ñ</div>
+        <br>
+        <div class="card main">
+            <article>Introduzca el texto a cifrar</article>
+            <textarea id="cadena" cols="30" rows="10" class="TCifrar"></textarea>
+            <br>
+            <article>Introduzca el dezplazamiento de la matriz</article>
+            <input type="number" id="desplazamiento" class="number">
+            <br>
+            <p>
+                <input class="cifrar" type="button" value="Cifrar" onclick="cifrar()">
+                <input class="descifrar" type="button" value="Descifrar" onclick="descifrar()">
+            </p>
+        </div>
+        <br>
+        <div id="resultado" class="footer">
+            <article>Texto cifrado / descifrado</article>
+        </div>
+        <article>Elizalde Hernández Alan 5IV7</article>
     </div>
 
-    <script src="js/cesar.js" ></script>
+    <script src="js/cesar.js"></script>
 </body>
+
 </html>
