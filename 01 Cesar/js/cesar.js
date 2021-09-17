@@ -67,7 +67,6 @@ var cesar = cesar || (function() {
 function cifrar() {
     var desplazamiento = document.getElementById("desplazamiento").value;
     var numeros = (/([0-9]*)/);
-    alert(numeros.test(desplazamiento));
     if (numeros.test(desplazamiento)) {
         numero = parseInt(desplazamiento) % 27;
         document.getElementById("resultado").innerHTML =
