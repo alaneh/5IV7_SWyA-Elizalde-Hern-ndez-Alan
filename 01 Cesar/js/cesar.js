@@ -81,7 +81,7 @@ function descifrar() {
     var desplazamiento = document.getElementById("desplazamiento").value;
     var numeros = (/([0-9]*)/);
     if (numeros.test(desplazamiento)) {
-        numero = parseInt(desplazamiento) % 26;
+        numero = parseInt(desplazamiento) % 27;
         document.getElementById("resultado").innerHTML =
             cesar.decode(document.getElementById("cadena").value, numero);
     }
