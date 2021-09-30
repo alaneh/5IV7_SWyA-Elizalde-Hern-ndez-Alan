@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viggenere</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header">
+            La tarea va a ser: Deberan de montar este cifrado simetrico junto con el cifrado de cesar que se habia desarrollado con anterioridad, y debo de poder elegir que cifrado es el que deseo y me direcciona al formulario correspondiente. (radiobutton para la
+            eleccion del cifrado) La css es como ustedes quieran :3 Obvi debe de estar deployado en github pages o heroku, entonces solo deben de entregar la url del sitio donde este hospedado el proyecto.
+        </div>
+
+        <div class="main card">
+            <label>Introduzca el texto a cifrar</label><br>
+            <input type="text" id="mensaje" class="texto">
+            <br>
+            <!--Texto a cifrar-->
+            <label>Introduzca la clave de cifrado</label><br>
+            <input type="text" id="llave" class="texto">
+            <br>
+            <!--Texto a clave / llave-->
+            <button id="cifrar" class="cifrar">Cifrar</button>
+            <br>
+            <!--Cifrar-->
+            <button id="descifrar" class="descifrar">Descifrar</button>
+            <!--descifrar-->
+            <br>
+            <label>El texto cifrado / descifrado es: </label> <br>
+            <input type="text" id="resultado" class="texto" readonly>
+            <!--Texto cifrado-->
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+    <!--Mandamos a llamar al algoritmo-->
+</body>
+
+</html>

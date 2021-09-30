@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+* {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+html {
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-repeat: no-repeat;
+}
+
+.cifrar {
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin: 5px;
+    border: 5px;
+    border-color: cadetblue;
+    background-color: rgb(127, 219, 255);
+    box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+    width: 20%;
+}
+
+.descifrar {
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin: 10px;
+    border: 5px;
+    border-color: rgb(160, 95, 95);
+    background-color: rgb(127, 161, 255);
+    box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+    width: 20%;
+}
+
+.cifrar:hover {
+    background-color: rgb(196, 248, 255);
+}
+
+.descifrar:hover {
+    background-color: rgb(125, 123, 255);
+}
+
+.card {
+    box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+    padding: 15px;
+    border: 10px solid;
+    border-color: #D9AFD9;
+}
+
+.grid {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header header header" "main main main" "footer footer footer ";
+}
+
+.header {
+    font-size: 1rem;
+    grid-area: header;
+    margin-bottom: 15px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 1.5rem
+}
+
+.TCifrar {
+    resize: none;
+    border-radius: 3px;
+    border: 2px solid #006199;
+    width: 50%;
+}
+
+.number {
+    border-radius: 3px;
+    width: 35%;
+    border: 2px solid #006199;
+}
+
+.texto {
+    width: 50%;
+    margin: 25px;
+    height: 45px;
+    font-size: 1.15rem;
+}
+
+label {
+    font-size: 1.45rem;
+}
+
+@media screen and (max-width:900px) {
+    html {
+        font-size: 28px;
+    }
+    body {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    }
+    .cifrar {
+        border-radius: 7px;
+        padding: 18px 25px;
+        margin: 10px;
+        border: 4px;
+        border-color: rgb(34, 75, 77);
+        background-color: rgb(54, 255, 188);
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.685);
+        width: 30%;
+    }
+    .descifrar {
+        border-radius: 7px;
+        padding: 18px 25px;
+        margin: 10px;
+        border: 4px;
+        border-color: rgb(80, 26, 26);
+        background-color: rgb(255, 79, 79);
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.685);
+        width: 30%;
+    }
+    .cifrar:hover {
+        background-color: rgb(101, 134, 126);
+    }
+    .descifrar:hover {
+        background-color: rgb(185, 123, 255);
+    }
+    .card {
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+    }
+    .grid {
+        height: 95vh;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "header header header" "main main main" "footer footer footer ";
+    }
+    .header {
+        font-size: 1rem;
+        grid-area: header;
+    }
+    .main {
+        grid-area: main;
+    }
+    .footer {
+        grid-area: footer;
+    }
+    .TCifrar {
+        margin: 5%;
+        resize: none;
+        border-radius: 3px;
+        width: 90%;
+    }
+    .number {
+        border-radius: 3px;
+        width: 50%;
+    }
+    label {
+        font-size: 1.2rem;
+    }
+    .texto {
+        margin: 30px 0px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 20px;
+    }
+    body {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    }
+    .cifrar {
+        border-radius: 5px;
+        padding: 15px;
+        margin: 5px;
+        border: 2px;
+        border-color: cadetblue;
+        background-color: aquamarine;
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+        width: 50%;
+    }
+    .descifrar {
+        border-radius: 5px;
+        padding: 15px;
+        margin: 5px;
+        border: 2px;
+        border-color: rgb(160, 95, 95);
+        background-color: rgb(255, 127, 127);
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+        width: 50%;
+    }
+    .cifrar:hover {
+        background-color: bisque;
+    }
+    .descifrar:hover {
+        background-color: rgb(185, 123, 255);
+    }
+    .card {
+        box-shadow: 4px 5px 34px -2px rgba(0, 0, 0, 0.65);
+    }
+    .grid {
+        height: 95vh;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "header header header" "main main main" "footer footer footer ";
+    }
+    .header {
+        font-size: 1rem;
+        grid-area: header;
+    }
+    .main {
+        grid-area: main;
+    }
+    .footer {
+        grid-area: footer;
+    }
+    .TCifrar {
+        margin: 1%;
+        resize: none;
+        border-radius: 3px;
+        width: 90%;
+    }
+    .texto {
+        width: 90%;
+        font-size: 16px;
+        margin: 15px 0px;
+    }
+    label {
+        font-size: 1.20rem;
+    }
+}
