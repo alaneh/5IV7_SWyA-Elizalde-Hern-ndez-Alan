@@ -243,4 +243,7 @@ label {
     label {
         font-size: 1.20rem;
     }
+    article {
+        font-size: 20px;
+    }
 }
