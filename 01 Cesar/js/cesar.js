@@ -8,10 +8,8 @@ var cesar = cesar || (function() {
                 'x', 'y', 'z'
             ];
             var l = abc.length;
-
             //necesitamos obtener la posicion que va  a venir por parte 
             //de la llave privada
-
             return function(c) {
                 //vamos a saber la posicion
                 var i = abc.indexOf(c.toLowerCase());
@@ -20,7 +18,6 @@ var cesar = cesar || (function() {
                 //al final?
                 //alert(c);
                 //alert(i);
-
                 if (i != -1) {
                     //primero obtenemos la posicion para el desp
                     var pos = i;
@@ -37,7 +34,6 @@ var cesar = cesar || (function() {
                         pos += (pos < 0) ? l : 0;
                     }
                     return abc[pos];
-
                 }
                 return c;
             };
@@ -48,14 +44,11 @@ var cesar = cesar || (function() {
         return String(txt).replace(re, function(match) {
             return replace(match);
         });
-
     };
-
     return {
         encode: function(txt, desp) {
             return proceso(txt, desp, true);
         },
-
         decode: function(txt, desp) {
             return proceso(txt, desp, false);
         }
@@ -66,23 +59,16 @@ var cesar = cesar || (function() {
 
 function cifrar() {
     var desplazamiento = document.getElementById("desplazamiento").value;
-    var numeros = (/([0-9]*)/);
-    if (numeros.test(desplazamiento)) {
-        numero = parseInt(desplazamiento) % 27;
-        document.getElementById("resultado").innerHTML =
-            cesar.encode(document.getElementById("cadena").value, numero);
-    }
-
+    desplazamiento %= 27;
+    document.getElementById("resultado").innerHTML =
+        cesar.encode(document.getElementById("cadena").value, desplazamiento);
 }
 
 //funcion de descifrado
 
 function descifrar() {
     var desplazamiento = document.getElementById("desplazamiento").value;
-    var numeros = (/([0-9]*)/);
-    if (numeros.test(desplazamiento)) {
-        numero = parseInt(desplazamiento) % 27;
-        document.getElementById("resultado").innerHTML =
-            cesar.decode(document.getElementById("cadena").value, numero);
-    }
+    desplazamiento %= 27;
+    document.getElementById("resultado").innerHTML =
+        cesar.decode(document.getElementById("cadena").value, desplazamiento);
 }
