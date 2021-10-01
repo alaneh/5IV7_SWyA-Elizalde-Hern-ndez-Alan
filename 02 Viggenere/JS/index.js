@@ -121,8 +121,6 @@ function ErrorMensaje() {
         text: "El texto ingreso no ha sido aceptado, ingrese solo minuscilas y evite numeros y simbolos",
         icon: 'error'
     });
-
-    alert("El texto ingreso no ha sido aceptado, ingrese solo minuscilas y evite numeros y simbolos");
 }
 
 
@@ -133,8 +131,6 @@ function ErrorClave() {
         text: "La clave ingresa es incorrecta, no cumple con las normas de solo minusculas y no usar numeros y/o simbolos",
         icon: 'error'
     });
-
-    alert("La clave ingresa es incorrecta, no cumple con las normas de solo minusculas y no usar numeros y/o simbolos");
 }
 
 function ErrorT() {
@@ -144,6 +140,4 @@ function ErrorT() {
         text: "La clave no puede ser mayor que el mensaje",
         icon: 'error'
     });
-
-    alert("La clave no puede ser mayor que el mensaje");
 }
