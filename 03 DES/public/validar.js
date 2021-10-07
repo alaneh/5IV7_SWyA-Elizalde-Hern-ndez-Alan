@@ -6,7 +6,7 @@ function validarCifrado(event) {
     formulario.setAttribute("action", "/cifrar");
     validacion = true;
     // Validar que no haya campos vacios
-    if (contenido.value == "") {
+    if (Texto.value == "") {
         Swal.fire({
             icon: 'error',
             title: 'ERROR',
@@ -16,7 +16,7 @@ function validarCifrado(event) {
     }
     // Validar extension
     if (validacion == true) {
-        validarExtension(contenido);
+        validarExtension(Texto);
     }
     if (validacion == false) {
         // Detiene la accion asociada al evento, por ejemplo
@@ -31,7 +31,7 @@ function validarDescifrado(event) {
     formulario.setAttribute("action", "/descifar");
     validacion = true;
     // Validar que no haya campos vacios
-    if (contenido.value == "" || clave.value == "") {
+    if (Texto.value == "" || clave.value == "") {
         Swal.fire({
             icon: 'error',
             title: 'ERROR',
@@ -41,7 +41,7 @@ function validarDescifrado(event) {
     }
     // Validar extension
     if (validacion == true) {
-        validarExtension(contenido);
+        validarExtension(Texto);
     }
     if (validacion == true) {
         validarExtension(clave);
